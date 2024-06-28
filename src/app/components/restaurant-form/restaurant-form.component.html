@@ -16,7 +16,7 @@
         <input matInput formControlName="location" required>
         <mat-error *ngIf="restaurantForm.controls?.['location']?.invalid">{{getErrorMessage('location')}}</mat-error>
       </mat-form-field>
-      <button mat-raised-button color="primary" type="submit" [disabled]="restaurantForm.invalid">
+      <button mat-raised-button class="form-field" color="primary" type="submit" [disabled]="restaurantForm.invalid">
         {{restaurantId ? 'Update' : 'Add'}}
       </button>
     </form>
